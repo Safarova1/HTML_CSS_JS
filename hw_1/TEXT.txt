@@ -1,0 +1,60 @@
+let showButton = document.querySelectorAll('.goodsButton')
+let myImage = document.getElementById('image')
+let normal = document.getElementById('normal')
+let revert = document.getElementById('revert')
+
+
+console.log(showButton)
+
+const show = (event) => {
+    console.log(event.target)
+    
+    event.target.style = 'background-color:red;'
+    showButton.forEach((item) => {
+        item.removeEventListener('click', show)
+    })
+}
+
+showButton.forEach((item) => {
+    item.addEventListener('click', show)
+})
+
+// const rotate = () => {    
+//     myImage.style = 'transform:rotate(180deg);'
+// }
+
+// const normal0 = () => {    
+//     console.log(myImage.classList.contains('image-rotate'))
+//     myImage.classList.remove('image-rotate')
+//     console.log(myImage.classList.contains('image-rotate'))
+
+// }
+
+const revert180 = () => {    
+    myImage.classList.toggle('image-rotate')
+    myImage.classList.toggle('none')
+
+    console.log(myImage.classList.contains('image-rotate'))
+}
+
+// myImage.addEventListener('click',rotate )
+// normal.addEventListener('click',normal0 )
+
+revert.addEventListener('click',revert180 )
+// normal.addEventListener('click',normal0 )
+
+
+
+
+
+
+
+
+
+querySelectorAll  -- tek elementi goturur
+get getElementById 
+
+.goods li
+
+
+toggle -yoxluyur eger varsa silir -yoxdusa elave edir
