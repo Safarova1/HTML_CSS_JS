@@ -328,7 +328,7 @@ let shopGoods = [
 
 
 //--------------------------------------------------------------------------------------------------------------------
-
+let list = document.querySelector('#list')
 
 
 
@@ -343,11 +343,7 @@ shopGoods.forEach((item) => {
 
 
 
-//pokazivayu massiv v spiske  i sapisivayu v spisok  vse
-
-let list = document.querySelector('#list')
-
-
+//pokazivayu massiv v spiske
 function show() {
     newArr.forEach((itemGooods) => {
         let listItem = document.createElement('li')
@@ -363,7 +359,7 @@ show()
 
 
 
-//esli likali to 
+
 let sort = document.querySelector('#sort')
 
 let klik = 'artan'
@@ -376,21 +372,13 @@ sort.addEventListener('click', function () {
         newArr.sort((a, b) => b.product_price - a.product_price)
         klik = 'artan'
     }
-    list.innerHTML=''
+    list.innerHTML = ' '
     show()
 })
 
 
 
 
-//udalit
-// let del = document.querySelector('#del')
 
 
 
-
-// del.addEventListener('click', function(){
-
-  
-
-// })
