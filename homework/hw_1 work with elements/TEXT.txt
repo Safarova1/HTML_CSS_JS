@@ -1,46 +1,7 @@
-HTML DOM Element
-
-creatElement  -yaratdigim element
-innerText - obyektin icinden gotururb yazmaq ucun
-appendChild - elave edir massivin icine sonuna
-innerHTML = `<p>${itemGooods.product_name}</p> ` -- p teqine cevirib icine yaziram
-.textContent - basqa textden deyerini deyisene yaziriq
-
-
-
-//----------------------------------------------------------------------
-
-firstElement -1ci element
-firstElement.parentElement -ana konteynerin
-firstElement.nextSibling -
-firstElement.previousSibling
-firstElement.parentElement.firstElementChild -ana konteynerin icindeki 1ci element
-firstElement.parentElement.lastElementChild
-
-
-//----------------------------------------------------------------------
-
-yeni elementleri dovrun icinde yaradiriq
-
-document.creatElement('li')
-
-listItem.innerText = `${itemGoods.product_price}-`
-
-
-
-
-//----------------------------------------------------------------------
-
-siyahidan 1ci elementi gotururem
-let firstElement = document.querySelector('#list li:first-child')
-console.log(firstElement)
-
-
-
-
-
-
-
-
-
-
+Bir duyme yaradin.
+ O duymeye kliklediyiviz zaman bir DIV acilacaq. 
+ Divin icinde bir mal siyahisi olacaq .
+ Hemin duymeni yene kliklesez pencere baglanmalidir. 
+ Sihanin yalniz bir elementine kliklemek imkani olacaq.
+  Kliklnen elemente bu stili tebiq edin 
+ text-decoration: line-through;
