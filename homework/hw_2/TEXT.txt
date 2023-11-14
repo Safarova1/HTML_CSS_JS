@@ -1,0 +1,7 @@
+Bir duyme yaradin.
+ O duymeye kliklediyiviz zaman bir DIV acilacaq. 
+ Divin icinde bir mal siyahisi olacaq .
+ Hemin duymeni yene kliklesez pencere baglanmalidir. 
+ Sihanin yalniz bir elementine kliklemek imkani olacaq.
+  Kliklnen elemente bu stili tebiq edin 
+ text-decoration: line-through;
