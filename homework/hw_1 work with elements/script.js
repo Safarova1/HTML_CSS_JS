@@ -1,17 +1,29 @@
 let button = document.getElementById('list')
+let div = document.getElementById('productList')
+let element = document.querySelectorAll('.item')
 
-let klik = true
+
+let klik = false
 
 const show = () => {
-    let div = document.getElementById('productList')
 
-    if (klik==true) {
+    if (klik) {
         div.style = 'display: none;'
+        klik = false
     } else {
-        div.style = 'display: block;'  
+        div.style = 'display: block;'
+
+        const style = () => {
+            element.style = ' text-decoration: line-through;'
+        }
+        element.forEach((item) => {
+            item.removeEventListener('click', style)
+        })
+        klik = true
     }
 
-    klik = false
 }
+
+
 
 button.addEventListener('click', show)
