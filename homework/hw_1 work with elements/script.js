@@ -9,64 +9,43 @@ const show = () => {
 
     if (klik) {
         div.style = 'display: none;'
-        klik = false
+
+
     } else {
         div.style = 'display: block;'
 
+        let list_element = document.querySelectorAll('li')
+
+        let sec = false
+
+        const secim = (event) => {
+
+            if (sec) {
+                event.target.style = 'text-decoration: none;'
+
+
+                list_element.forEach((item) => {
+                    item.removeEventListener('click', secim)
+                })
+
+                console.log('heel')
+            } else {
+                event.target.style = 'text-decoration: line-through;'
+
+
+            }
+            sec = !sec
+
+        }
+
+        list_element.forEach((item) => {
+            item.addEventListener('click', secim)
+        })
 
 
 
-        // let allList = document.querySelector('#item li')
-        // allList.forEach((item){
-        //     console.log(item)
-        // })
-
-
-
-
-
-
-
-
-        // let chooseItem = document.getElementById('item')
-
-        // const bas = (event) => {
-        //     console.log(event.target)
-
-        //     event.target.style = 'background-color:red;'
-        //     chooseItem.forEach((item) => {
-        //         item.removeEventListener('click', bas)
-        //     })
-        // }
-
-
-        // chooseItem.forEach((item) => {
-
-        //     item.addEventListener('click', bas)
-        // })
-
-
-
-
-        // const style = () => {
-        //     item.style = ' text-decoration: line-through;'
-        // }
-        // chooseItem.forEach((item) => {
-        //     item.removeEventListener('click', style)
-        // })
-
-
-
-        // const choose = () => {
-        //     item.target.style = 'background-color: pink;'
-
-        //     if (flag) {
-        //         console.log(flag)
-        //         chooseItem.removeEventListener('click', choose)
-        //     }
-        // }
-        klik = true
     }
+    klik = !klik
 
 }
 
