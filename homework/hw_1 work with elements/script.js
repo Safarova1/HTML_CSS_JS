@@ -16,31 +16,32 @@ const show = () => {
 
         let list_element = document.querySelectorAll('li')
 
-        let sec = false
-
-        const secim = (event) => {
-
-            if (sec) {
-                event.target.style = 'text-decoration: none;'
 
 
-                list_element.forEach((item) => {
-                    item.removeEventListener('click', secim)
-                })
+//obyektle parametrini yoxluyub active olub olmadugunu yoxla
+        // let sec = false
 
-                console.log('heel')
-            } else {
-                event.target.style = 'text-decoration: line-through;'
+        // const secim = (event) => {
 
+        //     if (sec) {
+        //         event.target.style = 'text-decoration: none;'
+                
 
-            }
-            sec = !sec
+        //         list_element.forEach((item) => {
+        //             item.removeEventListener('click', secim)
+        //         })
 
-        }
+        //     } else {
+        //         event.target.style = 'text-decoration: line-through;'
+                
 
-        list_element.forEach((item) => {
-            item.addEventListener('click', secim)
-        })
+        //     }
+        //     sec = !sec
+        //     secim()
+
+        // }
+
+      
 
 
 

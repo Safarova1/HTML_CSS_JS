@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+/* .image-rotate{
+    animation: rotate 1s infinite ease;
+}
+
+@keyframes rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+} */
+
+.salam {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+#list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px 30px;
+    gap: 20px;
+}
+
+#list li {
+    padding: 20px;
+    border: 2px solid pink;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#list li button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 4px;
+    background-color: pink;
+}
+
+#list li p:nth-child(2) {
+    font-size: 17px;
+    font-weight: 500;
+    color: red;
+}
+
+#list li p:nth-child(3) {
+    font-size: 20px;
+    font-weight: 900;
+    color: purple;
+}
+
+.rot {
+    transform: rotate(180deg);
+}
+
+#sort span {
+    display: inline-block;
+    transform: rotate(-90deg);
+}
