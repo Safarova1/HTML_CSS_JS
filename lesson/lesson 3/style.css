@@ -1,9 +1,9 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-#image {
+#image{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -19,15 +19,11 @@
     to{transform: rotate(360deg);}
 } */
 
-.salam {
+.salam{
     display: block;
 }
 
-.none {
-    display: none;
-}
-
-#list {
+.list {
     list-style: none;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -35,9 +31,14 @@
     gap: 20px;
 }
 
-#list li {
+.none{
+    display: none;
+}
+
+#list li{
     padding: 20px;
-    border: 2px solid pink;
+    min-width: 200px;
+    border: 2px solid black;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -45,33 +46,54 @@
     align-items: center;
     text-align: center;
     position: relative;
+    animation: show 1s 1;
+    transition: 1s;
 }
 
-#list li button {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    padding: 4px;
-    background-color: pink;
+@keyframes show {
+    from{width: 0%;}
+    to{opacity: 100%;}
+
 }
 
-#list li p:nth-child(2) {
+#list li .delete{
+position: absolute;
+right: 20px;
+top: 20px;
+}
+
+#list li p:nth-child(2){
     font-size: 17px;
     font-weight: 500;
     color: red;
-}
+ }
 
-#list li p:nth-child(3) {
-    font-size: 20px;
-    font-weight: 900;
-    color: purple;
+#list li p:nth-child(3){
+   font-size: 20px;
+   font-weight: 900;
+   color: blue;
 }
-
-.rot {
+.rot{
     transform: rotate(180deg);
 }
-
-#sort span {
+#sort span{
     display: inline-block;
     transform: rotate(-90deg);
+}
+
+
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.image{
+    animation: name 1s 1;
+
+}
+
+@keyframes name {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }

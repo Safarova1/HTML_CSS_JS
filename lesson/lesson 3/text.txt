@@ -1,4 +1,11 @@
 includes-varsa element (yoxlamaq ucundu)
 
+classList --elementin clasini deyismek
+remove -silmek 
+add-elave etmek
+togle -elave edib silmek
 
 
+
+
+mousemove -- ustunde terpedende _button click
