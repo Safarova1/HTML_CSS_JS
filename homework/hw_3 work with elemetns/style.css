@@ -10,14 +10,12 @@ body {
 
 
 main {
-padding: 40px;
+    padding: 40px;
     background-color: rgba(38, 43, 48, 0.432);
     color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
 
-    /* display: grid;
-    grid-template-columns: auto auto  ; */
     gap: 30px;
 
     justify-content: space-between;
