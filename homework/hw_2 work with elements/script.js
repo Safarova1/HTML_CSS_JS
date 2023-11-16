@@ -50,31 +50,205 @@ let shopGoods = [
 ]
 
 
-let list_bag = []
 
 
 
 
 
-let list_home = []
+let my_home = []
 
 shopGoods.forEach((item) => {
     item.products.forEach((itemGoods) => {
-        list_home.push(itemGoods)
+        my_home.push(itemGoods)
     })
 })
 
 
-let list = document.querySelector('#list')
+
+
+
+
+
+
+
+
+
+
+// eshyalarim
+
+let home = document.querySelector('#home')
+let list_home = document.querySelector('#list_home')
+
+
+
+
+
+
+
 
 function show() {
-    list_home.forEach((itemGooods, index) => {
-        let listItem = document.createElement('li')
-        listItem.innerHTML = `<button class="delete" onclick="deleteGooods(${index})">X</button><p>${itemGooods.product_name}</p><p>${itemGooods.product_description}</p><p><span>${itemGooods.product_price}</span><span> AZN</span><button onclick="addGoods(${index})">ADD</button></p>`
-        list.appendChild(listItem)
+    my_home.forEach((items, index) => {
+        let list_hitem = document.createElement('li')
+        list_hitem.innerHTML = `
+        <p>${items.product_name}</p>
+        <p>${items.product_description}</p>
+        <p>${items.product_price} AZN</p>
+        <p><button class="add" onclick="add_bag(${index})">sebete elave et</button>
+        <button class="delete" onclick="delete_home(${index})">X</button></p>`
+        list_home.appendChild(list_hitem)
     })
 }
 
 show()
+
+
+
+
+function delete_home(index) {
+    list_home.innerHTML = ''
+    my_home.splice(index, 1)
+    show()
+}
+
+
+
+
+
+
+
+
+
+
+
+//sebetim
+let bag = document.querySelector('#bag')
+let list_bag = document.querySelector('#list_bag')
+
+
+
+
+
+let my_bag = []
+
+function show_bag() {
+
+    my_bag.forEach((item, index) => {
+        let list_item = document.createElement('li')
+        list_item.innerHTML = `
+        <p>${item.product_name}</p>
+        <p>${item.product_description}</p>
+        <p>${item.product_price} AZN</p>
+        <button class="delete" onclick="delete_bag(${index})">X</button>
+        `
+        list_bag.appendChild(list_item)
+    })
+}
+
+
+
+
+
+
+
+
+
+function add_bag(index) {
+    if (my_bag.includes(my_home[index])) {
+
+    } else {
+        let obj = my_home[index]
+        my_bag.push(obj)
+        console.log(my_bag)
+        list_bag.innerHTML = ''
+        show_bag()
+    }
+}
+
+
+
+
+function delete_bag(index) {
+    list_bag.innerHTML = ''
+    my_bag.splice(index, 1)
+    show_bag()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//axtaris
+let search = document.querySelector('#search')
+let list_search = document.querySelector('#list_search')
+
+function search_filter() {
+    list_search.innerHTML = ''
+    let input = prompt('axtaris edeceyiniz malin adini qeyd edin mes.Qadın eteyi ')
+
+    let my_search = []
+    my_home.forEach((item, index) => {
+
+        if (item.product_name == input) {
+            let obj = my_home[index]
+            my_search.push(obj)
+            console.log(my_search)
+
+
+            let list= document.createElement('li')
+            list.innerHTML = `
+                <p>${item.product_name}</p>
+                <p>${item.product_description}</p>
+                <p>${item.product_price} AZN</p>
+                <button class="add" onclick="add_bag(${index})">sebete elave et</button>
+                `
+                list_search.appendChild(list)
+
+        }
+    })
+
+}
+
+search.addEventListener('click', search_filter)
+
+
+
+
+
+
+
+
+
+
+
+
+
+//menunun duymeleri
+home.addEventListener('click', function () {
+    list_bag.style = 'display:none;'
+    list_search.style = 'display:none;'
+    list_home.style = 'display:grid;'
+})
+
+bag.addEventListener('click', function () {
+    list_home.style = 'display:none;'
+    list_search.style = 'display:none;'
+    list_bag.style = 'display:grid;'
+})
+
+
+search.addEventListener('click', function () {
+    list_home.style = 'display:none;'
+    list_bag.style = 'display:none;'
+    list_search.style = 'display:grid;'
+})
+
 
 
