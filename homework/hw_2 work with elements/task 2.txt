@@ -1,0 +1,8 @@
+Search duymesine klikleyib propt cixardin.
+Prompta daxil etdiyiniz soz uzre mallari filter edin. 
+Ikinci sehife yaradin bir html fayl icinde.
+ Adi MY BAG olsun. 
+ Esas mallar sehifesinden MY BAG sehifesine kecmeye imkan 
+ yaradin (display ile). 
+ Mallar sehifesinde her bil malin uzerine ADD duymesi elave din. 
+Bu duymeye klikleyende hemin mal MY BAG sehifesinde gorsenmelidir
