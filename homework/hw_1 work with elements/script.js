@@ -85,6 +85,16 @@ button.addEventListener('click', show)
 
 
 
+
+
+
+
+
+
+
+
+
+
 // zadaca1  -2ci usul
 
 // let button = document.getElementById('list')
