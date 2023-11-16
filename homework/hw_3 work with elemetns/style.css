@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 1090px;
+
+}
+
+
+main {
+padding: 40px;
+    background-color: rgba(38, 43, 48, 0.432);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+
+    /* display: grid;
+    grid-template-columns: auto auto  ; */
+    gap: 30px;
+
+    justify-content: space-between;
+
+    margin: 40px;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+
+
+.bg1 {
+    background-image: url('1.jpg');
+}
+
+.bg2 {
+    background-image: url('2.jpg');
+}
+
+.bg3 {
+    background-image: url('3.jpg');
+}
+
+.bg4 {
+    background-image: url('4.jpg');
+}
+
+
+.bg5 {
+    background-image: url('5.jpg');
+}

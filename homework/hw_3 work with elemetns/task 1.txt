@@ -1,0 +1,2 @@
+Ekranin ortasinda besh shekil olacaq. 
+Istenilen shekile tiklayanda arxa fon o shekile boyanaqcaq
