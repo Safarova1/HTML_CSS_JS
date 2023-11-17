@@ -22,7 +22,7 @@ nav {
     background-color: #4C4B16;
     border: 0px;
     color: #f3a85e;
-    font-size: 15px;
+    font-size: 20px;
 
 }
 
@@ -46,16 +46,17 @@ ul {
 }
 
 li {
-    background-color: #F9B572;
+    background-color: #f7d9bc;
     min-width: 200px;
     padding: 10px;
 }
 
 button {
-    background-color: #f3a85e;
+    background-color: #4C4B16;
     border: 0px;
-    color: #4C4B16;
+    color: #ecc093;
     border-radius: 5%;
+    font-size: 18px;
 }
 
 
