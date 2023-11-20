@@ -68,8 +68,86 @@
 
 
 // --------------------------------------------------------
-// zadaca 3 -
+// zadaca 3 - telefon + gelle baslamasa deyilsin alertle
 
+
+// let send = document.querySelector('#send')
+// let list = document.querySelector('#list')
+
+// let form = document.querySelector('form')
+
+// let inputs = document.querySelectorAll('.userName')
+
+
+
+
+
+// form.addEventListener('submit', function (ev) {
+//     ev.preventDefault()   // sehife yenilenmesin
+
+//     //eger + deyilse 1ci 
+//     if (document.querySelector('input[name="telephone"]').value[0] !== '+') {
+//         alert('telefon +gelle baslamalidir')
+//         return
+//     }
+
+
+
+
+
+
+
+//     let formData = new FormData(this)  //formun elementlerini goturdum
+//     let formInfo = [...formData]  //formun elementlerini massive yaziram
+
+
+
+//     //massivin 1ci elementini duzeliw etmek 
+//     // _1ci herfi boyukle
+//     // - tire varsa yox edirem
+//     formInfo = formInfo.map((item) => {
+
+//         if (item[0].includes('-')) {
+
+//             let arr = [item[0].split('-').join('_'), item[1]]
+//             let el = [arr[0][0].toUpperCase() + arr[0].slice(1), arr[1]]
+//             return el
+
+//         } else {
+
+//             let el = [item[0][0].toUpperCase() + item[0].slice(1), item[1]]
+//             return el
+//         }
+//     })
+
+//     console.log(formInfo)
+
+
+
+//     let obj = {}
+//     formInfo.forEach((item) => {
+//         obj[item[0]] = item[1]
+//     })
+
+//     for (const key in obj) {
+//         const element = obj[key];
+//         let p = document.createElement('p')
+//         p.innerHTML = `<span>${key}</span><span>${element}</span>`
+//         list.appendChild(p)
+//     }
+// })
+
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------------
+// zadaca 4 - tikladigin zaman yoxlayis olsun
 
 let send = document.querySelector('#send')
 let list = document.querySelector('#list')
@@ -79,43 +157,61 @@ let form = document.querySelector('form')
 let inputs = document.querySelectorAll('.userName')
 
 
-
+//2ci usul
+document.querySelector('input[name="telephone"]').addEventListener('input', function(ev){
+    let span = document.querySelector('input[name="telephone"]').nextElementSibling
+    if (ev.target.value[0] !== '+') {
+        span.innerText = 'Wrong telephone format'
+    }else if(ev.target.value[0] === '+'){
+        span.innerText = ''
+    }
+})
 
 
 form.addEventListener('submit', function (ev) {
-    ev.preventDefault()   // sehife yenilenmesin
-    let formData = new FormData(this)  //formun elementlerini goturdum
-    let formInfo = [...formData]  //formun elementlerini massive yaziram
+    ev.preventDefault()
+
+
+    //1ci usul -clicklediyin zaman
+
+    if (document.querySelector('input[name="telephone"]').value[0] !== '+') {
+        let span = document.createElement('span')
+        span.className = 'wrong'
+        span.innerText = 'Wrong telephone format'
+        document.querySelector('input[name="telephone"]').parentElement.appendChild(span)
+
+        return
+    }
 
 
 
-    //massivin 1ci elementini duzeliw etmek 
-    // _1ci herfi boyukle
-    // - tire varsa yox edirem
+
+
+    let formData = new FormData(this)
+    let formInfo = [...formData]
+    console.log(formInfo)
+
     formInfo = formInfo.map((item) => {
-
         if (item[0].includes('-')) {
-
-            let arr = [item[0].split('-').join('_'), item[1]]
+            let arr = [item[0].split('-').join(' '), item[1]]
             let el = [arr[0][0].toUpperCase() + arr[0].slice(1), arr[1]]
+            console.log(el)
             return el
-
         } else {
-
             let el = [item[0][0].toUpperCase() + item[0].slice(1), item[1]]
+            console.log(el)
             return el
         }
     })
 
     console.log(formInfo)
-
-
-
     let obj = {}
+
     formInfo.forEach((item) => {
         obj[item[0]] = item[1]
     })
 
+    console.log(obj)
     for (const key in obj) {
         const element = obj[key];
         let p = document.createElement('p')
@@ -123,14 +219,3 @@ form.addEventListener('submit', function (ev) {
         list.appendChild(p)
     }
 })
-
-
-
-
-
-
-
-
-
-
-

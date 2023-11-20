@@ -34,27 +34,61 @@
     <!-- zadaca 3 -->
 
     <!--required  -bos gondermek olmasin  -->
-    <form name="form">
-        <input name="user-name" class="userName" type="text" required>
-        <input name="user-password" class="userName" type="password" required>
-        <input name="email" class="userName" type="email" required>
-        <input name="telephone" class="userName" type="tel" required>
-        <input name="adress" class="userName" type="text" required>
-        <input name="profession" class="userName" type="text" required>
+    <!-- <form name="form">
+        <input name="user-name" class="userName" type="text" placeholder="name" required>
+        <input name="user-password" class="userName" type="password" placeholder="password" required>
+        <input name="email" class="userName" type="email" placeholder="email" required>
+        <input name="telephone" class="userName" type="tel" placeholder="telephone" required>
+        <input name="adress" class="userName" type="text" placeholder="adress" required>
+        <input name="profession" class="userName" type="text" placeholder="profession" required>
         <button type="submit" id="send">CLICK</button>
     </form>
     
+    <div id="list"></div> -->
+
+
+
+
+
+
+    <!-- zadaca 4-->
+    <!--pattern - https://developer.mozilla.org/ru/docs/Web/HTML/Element/input/tel -->
+
+
+    <form name="form">
+        <label>Name
+            <input name="user-name" id="user-name" class="userName" type="text" placeholder="Name" required>
+            <span class="wrong"></span>
+        </label>
+        <label>Password
+            <input name="user-password" class="userName" type="password" placeholder="Password" required>
+            <span class="wrong"></span>
+
+        </label>
+        <label>Email
+            <input name="email" class="userName" type="email" placeholder="Email" required>
+            <span class="wrong"></span>
+
+        </label>
+        <label>Telephone
+            <input pattern="[+]{1}[0-9]{12}" name="telephone" class="userName" type="tel" placeholder="Telephone" required>
+            <span class="wrong"></span>
+
+        </label>
+        <label>Adress
+            <input name="adress" class="userName" type="text" placeholder="Adress" required>
+            <span class="wrong"></span>
+
+        </label>
+        <label>Profession
+            <input name="profession" class="userName" type="text" placeholder="Profession" required>
+            <span class="wrong"></span>
+
+        </label>
+        <button type="submit" id="send">CLICK</button>
+    </form>
+
     <div id="list"></div>
-
-
-
-
-
-
-
-
-
-
 
 
 

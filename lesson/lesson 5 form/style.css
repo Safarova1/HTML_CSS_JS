@@ -13,3 +13,19 @@
    color: red;
    font-weight: 900;
 }
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrong{
+    color: red;
+    font-size: 8px;
+}
