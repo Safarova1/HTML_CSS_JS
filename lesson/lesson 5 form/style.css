@@ -1,0 +1,15 @@
+@keyframes name {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+#list p{
+    display: flex;
+    gap: 20px;
+}
+
+#list p span:nth-child(1){
+   color: red;
+   font-weight: 900;
+}
