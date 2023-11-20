@@ -1,0 +1,14 @@
+form 
+
+
+3 input + 1 button
+
+
+yenilenmir sehife__
+
+ada reqem daxil etmek olmaz - error
+password 1ci herf boyuknen olmalidir
+email yoxlanisi - axirda az olsun -.az
+
+
+

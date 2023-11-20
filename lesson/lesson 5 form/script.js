@@ -243,7 +243,7 @@ form.addEventListener('submit', function (ev) {
         } else {
             let el = [item[0][0].toUpperCase() + item[0].slice(1), item[1]]
             console.log(el)
-            return el
+           
         }
     })
 

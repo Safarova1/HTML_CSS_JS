@@ -3,7 +3,7 @@ kodla yazmaq ve yaxud form
 
 form sorgu gondermek ucun lazimdi
 
-
+formun validasiyasi - inputularin duzgun daxil olunmasini yoxlamaq
 
 
 
