@@ -64,6 +64,11 @@
             <input name="user-password" class="userName" type="password" placeholder="Password" required>
             <span class="wrong"></span>
 
+
+            <!-- parolu gostermek -->
+            <input class="showPassword" type="checkbox">
+
+
         </label>
         <label>Email
             <input name="email" class="userName" type="email" placeholder="Email" required>
@@ -71,6 +76,8 @@
 
         </label>
         <label>Telephone
+
+            <!-- telefonun qabaginda + olmasi 12 reqem olmasinin yoxlanmasi -->
             <input pattern="[+]{1}[0-9]{12}" name="telephone" class="userName" type="tel" placeholder="Telephone" required>
             <span class="wrong"></span>
 
@@ -85,6 +92,23 @@
             <span class="wrong"></span>
 
         </label>
+
+
+
+
+        <select name="cins" id="">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+
+        </select>
+
+
+        <input type="radio" name="rad"> <!--  Rad:"on" -->
+        <input type="checkbox" name="check">  <!--  Check:"on" -->
+        
+
+
+
         <button type="submit" id="send">CLICK</button>
     </form>
 

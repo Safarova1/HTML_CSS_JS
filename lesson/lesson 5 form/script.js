@@ -157,22 +157,65 @@ let form = document.querySelector('form')
 let inputs = document.querySelectorAll('.userName')
 
 
-//2ci usul
-document.querySelector('input[name="telephone"]').addEventListener('input', function(ev){
-    let span = document.querySelector('input[name="telephone"]').nextElementSibling
-    if (ev.target.value[0] !== '+') {
-        span.innerText = 'Wrong telephone format'
-    }else if(ev.target.value[0] === '+'){
-        span.innerText = ''
-    }
+
+
+
+//uzun yol parolun gorsedilmesi
+// document.querySelector('.showPassword').addEventListener('click', function(ev){
+//     if(ev.target.checked === true){
+//         document.querySelector('input[name="user-password"]').type = 'text'
+//     }else{
+//         document.querySelector('input[name="user-password"]').type = 'password'
+
+//     }
+// })
+
+//qisa yol parolun gosterilmesi
+document.querySelector('.showPassword').addEventListener('click', function(ev){
+    document.querySelector('input[name="user-password"]').type = ev.target.checked ? 'text' : 'password'
+
 })
+
+
+
+
+
+
+
+//2ci usul-elave  --uzun yol
+// document.querySelector('input[name="telephone"]').addEventListener('input', function(ev){
+//     let span = document.querySelector('input[name="telephone"]').nextElementSibling
+//     if (ev.target.value[0] !== '+') {
+//         span.innerText = 'Wrong telephone format'
+//     }else if(ev.target.value[0] === '+'){
+//         span.innerText = ''
+//     }
+// })
+
+//qisa yol
+document.querySelector('input[name="telephone"]').addEventListener('input', function (ev) {
+    let span = document.querySelector('input[name="telephone"]').nextElementSibling
+    let tel = ev.target.value[0]
+    tel !== '+' ? span.innerText = 'Wrong telephone format' : span.innerText = ''
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 form.addEventListener('submit', function (ev) {
     ev.preventDefault()
 
 
-    //1ci usul -clicklediyin zaman
+    //1ci usul -clicklediyin zaman sehvi gostersin telde
 
     if (document.querySelector('input[name="telephone"]').value[0] !== '+') {
         let span = document.createElement('span')
@@ -189,7 +232,7 @@ form.addEventListener('submit', function (ev) {
 
     let formData = new FormData(this)
     let formInfo = [...formData]
-    console.log(formInfo)
+    
 
     formInfo = formInfo.map((item) => {
         if (item[0].includes('-')) {
@@ -204,7 +247,7 @@ form.addEventListener('submit', function (ev) {
         }
     })
 
-    console.log(formInfo)
+   
     let obj = {}
 
     formInfo.forEach((item) => {
