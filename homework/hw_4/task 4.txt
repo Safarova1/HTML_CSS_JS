@@ -1,0 +1,5 @@
+Üç input yaradin. 
+Biri ad ucun(text-type) biri mail üçün(email-type) 
+biri ise parol üçün (passüord-type) ve bir düymə 
+yaradın ki ona klikleyende inputlara yazılmış deyerler 
+diger p teqlerine yazısın
