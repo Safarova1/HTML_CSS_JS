@@ -12,8 +12,8 @@ el.style = `width:${x}px;height:${y}px;`
 mousemove
 mousedown
 mouseup
-
-
+scroll
+click
 
 
 https://www.w3schools.com/html/html5_draganddrop.asp

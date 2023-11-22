@@ -163,20 +163,56 @@
 
 
 //----------------------------------------------------------------------------
-// zadaca 6
+// zadaca 6 - kliklediyimiz zaman sehife ora qalxr
 
 
 
+let div = document.querySelector('#list')
+let el = document.querySelector('#el')
+let onTop = document.querySelector('#onTop')
+
+
+let flag = false
+
+el.addEventListener('mousedown', function () {
+    flag = true
+    console.log(flag)
 
 
 
+    div.addEventListener('mousemove', function (ev) {
+        console.log(flag)
+        let x = ev.pageX
+        let y = ev.pageY
+        if (x > 350) {
+            x = 350
+        }
+        if (y > 350) {
+            y = 350
+        } if (flag) {
 
+            el.style = `transform:translate(${x}px,${y}px)`
+        }
+    })
 
+})
 
+el.addEventListener('mouseup', function () {
+    flag = false
+    console.log(flag)
+})
 
+console.log(window)
 
+window.addEventListener('scroll', function(ev){
+    console.log(window.scrollY)
+    console.log(window.scrollX)
 
+})
 
+onTop.addEventListener('click', function(ev){
+    window.scroll(300, 200)
+})
 
 
 
