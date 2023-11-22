@@ -1,1 +1,23 @@
 obyektin x ve y kordinatlari zre hereketi
+
+
+offsetx 
+offsety
+
+let x = ev.pageX
+let y = ev.pageY
+
+el.style = `width:${x}px;height:${y}px;`
+
+mousemove
+mousedown
+mouseup
+
+
+
+
+https://www.w3schools.com/html/html5_draganddrop.asp
+https://www.geeksforgeeks.org/html-drag-and-drop/
+
+
+
