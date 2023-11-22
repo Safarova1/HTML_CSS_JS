@@ -18,6 +18,8 @@
 
 
 
+
+
 /* zadaca 3   */
 
 /* #list{
@@ -36,11 +38,10 @@
 
 
 
+
 /* zadaca 4 - 6*/
 
-
-
-* {
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -58,12 +59,38 @@
     background-color: blue;
 }
 
+#onTop{
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+} */
+
+
+
+
 
 
 
 /* zadaca 7 */
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
+#list{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+#list li{
+   border: 2px solid black;
+   padding: 20px;
+   font-size: 40px;
+ 
+   list-style: none;
+}
 
 
 
