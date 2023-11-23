@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 20px;
+    background-color: #2C462C;
+    
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    align-content: center;
+}
+
+div {
+    margin: 10px;
+    background-color: #1c361c;
+}
+
+
+p {
+    color: #F4924B;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+form {
+
+    display: grid;
+    gap: 5px;
+    margin: auto;
+    padding: 10px;
+    max-width: 300px;
+}
+
+button {
+    border-radius: 5px;
+    border: 0px;
+    background-color: grey;
+    color: yellow;
+    padding: 5px;
+}
+
+input {
+    border: 0px;
+    text-align: center;
+    padding: 5px;
+
+}
