@@ -868,7 +868,7 @@ window.addEventListener('scroll', function(){
     console.log(window.scrollY)
     console.log(document.body.clientHeight)
 
-    if(document.body.clientHeight==50247 && newArr.length ){
+    if((window.innerHeight + this.window.scrollY) >= document.body.offsetHeight){
         end += 20
          newArr = comments.slice(start, end)
          
@@ -879,7 +879,7 @@ window.addEventListener('scroll', function(){
 
 
 
-
+console.log(window)
 
 
 
