@@ -115,7 +115,7 @@
 
 
 //----------------------------------------------------------------------------
-// zadaca 4 -klikleyenden sonra terfede bilim
+// zadaca 4 -klikleyenden sonra terpede bilim
 // let div = document.querySelector('#list')
 // let el = document.querySelector('#el')
 
