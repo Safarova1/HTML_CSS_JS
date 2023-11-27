@@ -1,0 +1,27 @@
+getBoundingClientRect().y = elementin xususiyyetlerinden birin cixara bilirsen
+mes y koordinatini 
+
+
+
+
+kohne = 0
+teze =648
+deyisen = teze
+
+
+kohne = deyisene(648)
+teze = 1246
+deyisen =teze(1246)
+
+
+
+
+execCommand()
+clipboardData
+Clipboard
+
+
+
+
+
+
