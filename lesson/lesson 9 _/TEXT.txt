@@ -1,0 +1,159 @@
+jquery
+conconatisiya - bir metodun ustune geln=mesi
+
+
+clipboard.writePop
+
+keydown
+keyup
+keypress
+
+`-wablon literal
+
+RegExp  - INPUTA hansisa duzgun formatda yamagi yoxlamaq ucun istifade olunur
+match metodu
+/es/.exec(text);
+
+
+/[a-z A-z]/g   = /[a-z]/gi
+
+/[h]/g  -butun h-lari global olunan
+/ w /g  - ancaq w -qaytarir
+
+/[^h]/g -ondan bawqa her weyi silir
+
+/h.t/g - noqtelerin sayi ordaki simbollarin sayidir
+
+/ \w /g    - herif ve reqemleri ---W boyuk olanda ancaq simbollari
+
+/ \d /g  - ancaq reqem
+
+/ \s /g - bosluqlari qaytarir
+
+
+
+/ \b LO /g - cumlenin evvelinde LO birlesmesini axtarib qaytarir -7
+
+/ \B LO /g - cumlede 1ci  LO birlesmesini axtarib qaytarir -3
+
+deyisenle yazanda 
+let t = LO\\b
+ler pattern = new RegExp (t)
+
+
+----------------------------------------------------------
+let input = 'LO'
+let t = `${input}\\B`    
+let text = "HELLO, LOOK LOOK AT YOU!"; 
+let pattern = new RegExp(t) ;
+let result = text.search(pattern);
+
+console.log(result)
+
+----------------------------------------------------------
+
+
+let text = "The best things in life are free";
+let result = /es/.exec(text);
+console.log(result)
+
+console.log(result[0], result.input, result.index)
+
+
+
+
+search -indexsi qaytarir
+test -true false 
+match - ozunu qaytarir
+
+exec - massiv qaytarir 
+
+.toString - patterini str edirik
+
+o+  - o-dan soraki butun her weyi qaytarir bosluga qeder
+/iss(?=all) -- iss-den sonra gelen all-dusa o iss-i qaytarir
+/iss(?! all) -- iss-den sonra gelen all yoxdusa  o iss-i qaytarir
+
+
+
+
+
+inputa text daxil edirik
+massivin icinde axtariw edeceyik massivin icindeki ada gore
+
+
+//keydown - duyme sixilan zaman
+//keypress - duyme kliklenen zaman
+//keyup - duyme buraxilan zaman
+
+//Computerin yaddshinda Ctrl + C kimi yadda saxlayir ve Ctrl + V ile harasa yaza bilerik
+cop.addEventListener("click", function () {
+    navigator.clipboard.writeText(cop.innerText)
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let text = 'hello';
+// let patternNo = /[^l]/g;  
+
+
+// let regNo = text.match(patternNo)
+// console.log(regNo)
+
+// let testNo = patternNo.test(text) // true false --var yoxdu onu gosterir
+// console.log(testNo)
+
+
+
+
+
+// let ar = ['laptop', 'telephone', 'PC']
+// let m = 'Microsoft'
+
+
+// ar.forEach((item) => {
+//     let t = `${item}\(?= ${m})`
+//     let text = "PC Microsoft Is telephone Microsoft thiss laptop Microsoft all laptop Samsung there laptop Apple iss all laptop Microsoft";
+
+//     let pattern = new RegExp(t,'gi') ;
+
+//     let result = text.match(pattern);
+//     result.forEach((itemEl) => {
+//         console.log(itemEl)
+//     })
+
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
