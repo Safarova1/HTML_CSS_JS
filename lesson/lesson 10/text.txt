@@ -82,14 +82,23 @@ body.addEventListener('mousemove', function(){
 
 
 
+audio
+
+controls - umumi gomesi itecek yigiwilsa
+autoplay - acilan kimi iwlenecek
 
 
 
+//---------------------------------------------------------------
+iframes  --you tubedan video
+?atributlar&playlist='idisi' 
 
 
+//---------------------------------------------------------------
+map -location
+https://www.google.com/maps/place/City+Point+Baku/@40.3897943,49.8304391,17z/data=!4m17!1m10!4m9!1m3!2m2!1d49.8320282!2d40.4333297!1m3!2m2!1d49.8203187!2d40.4163435!3e0!3m5!1s0x40307d82b3b0c031:0xc11310c761bdb24!8m2!3d40.3900006!4d49.8301716!16s%2Fg%2F11cs3ps9n2?hl=ru&entry=ttu
 
-
-
+https://maps.app.goo.gl/uSUwUYtgbh5yWVT7A
 
 
 
