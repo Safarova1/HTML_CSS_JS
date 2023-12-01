@@ -1,0 +1,97 @@
+video tag
+
+<video >
+    <source src="link" type = "video/mp4">
+</video >
+
+
+
+width -eni
+height - uzunluq
+controls - kontrol duymeleri
+autoplay  muted -sehife acilan kimi video isliyir
+muted - sessiz
+playsinline -- autoplay -safaride islemir bunuda elave et
+loop -tekrari
+
+
+play()
+pause()
+track -- perevod na kakoy to yazik
+<track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+https://www.w3schools.com/tags/tag_track.asp
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_met_play_pause
+https://www.w3schools.com/tags/av_met_play.asp
+
+
+
+
+//---------------------------------------------------------------
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+
+<video id="myVideo" width="320" height="176">
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+
+
+<script> 
+let vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+
+
+
+//function playpause() { 
+//  if(vid){
+//    vid.play(); 
+//
+//  }else{
+//    vid.pause(); 
+//  }
+//} 
+
+
+
+</script> 
+
+//---------------------------------------------------------------
+let vid = document.getElementById("myVideo"); 
+let body = document.querySelector("body")
+
+
+body.addEventListener('mousemove', function(){
+    vid.play()
+
+
+})
+
+
+
+
+//---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
