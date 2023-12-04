@@ -1,0 +1,28 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+#line {
+    display: inline-block;
+    height: 20px;
+    width: 5px;
+    margin-left: 2px;
+    background-color: pink;
+    animation: lineEffect 0.2s infinite linear;
+}
+
+@keyframes lineEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+} */
