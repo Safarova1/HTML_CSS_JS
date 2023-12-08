@@ -1,0 +1,14 @@
+Üç input yaradın. 
+İnputun biri login üçün olacaq,
+biri password üçün, digəri isə mobil nömrə üçün.
+Bütün üç input üçün altında span yaradın. 
+İnputları yazılmış dəyərə görə yoxlamaq lazım olacaq. 
+Əgər səhv dəyərlər daxil olunarsa o halda həmin inputun 
+spanında yazılacaq ki, məlumat düzgün daxil olunmayıb.
+Misal üçün logində ancaq rəqəm və ya ancaq hərf daxil 
+olunarsa o halda səhvi göstərin
+(logində həm hərf həm də rəqəm olmalıdır). 
+Parolda ise 8 simvoldan artıq və həm hərf həm də rəqəm olmalıdır.
+Mobil nömrə + başlamalıdır. 
+Səhv siz dəyər daxil edən zaman görsənməlidir
+

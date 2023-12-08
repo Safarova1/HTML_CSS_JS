@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #2B3499;
+    color: #FF6C22;
+
+}
+
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 100px;
+
+    overflow: hidden;
+    position: relative;
+    
+
+}
+
+div span {
+    position: relative;
+}

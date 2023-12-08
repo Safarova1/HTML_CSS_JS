@@ -1,0 +1,12 @@
+Birinci tapshiriq
+
+Bir konteyner yaradin ve ele edin ki duymeye kliklediyiviz 
+zaman bir ses gelsin ve bir tekst herif-herif konteynerin 
+gorunen hissesine qalxsin
+
+Ikinci tapshiriq
+
+Bir sehife yaradin ki acilan kimi sehfenin 100% hundurlyune 
+ve 100% enine bir video ishe dushsun ve loopda olsun(dovrde)
+
+
