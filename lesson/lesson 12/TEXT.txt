@@ -1,0 +1,81 @@
+creatElement('option')
+
+selectedIndex - 
+
+
+
+
+
+
+
+
+//---------------------------------------------------------------
+localStorage.setItem("lastname", "Smith");
+localStorage.getItem("lastname");
+localStorage.removeItem(key);
+
+
+
+JSON - tipi stringdi__ ferqi massivi string etmek olmur _ massivi string etmek ucun istifade olunur
+
+nece var hele yadda saxlayir__sintaksisi yadda saxlayir_
+
+
+
+JSON.stringify = '[1,2,3,4,5]'
+parse - normal massiv edir [1,2,3,4,5]
+
+sessionStorage - sehifeden cixasanki itsin yaddasi
+localStorage
+
+
+
+
+
+
+
+
+
+
+
+
+// const save = document.getElementById('save')
+// const plus = document.getElementById('plus')
+// const get = document.getElementById('get')
+
+// const list = document.getElementById('list')
+
+
+// let arr = [1, 2, 3, 4, 5]
+
+// const saveDate = () => {
+//     localStorage.setItem('goodArray', JSON.stringify(arr))
+// }
+
+
+// const getDate = () => {
+//     list.innerHTML=''
+//     let array = JSON.parse(localStorage.getItem('goodArray'))
+//     array.forEach(item => {
+//         let word = document.createElement('span')
+
+//         word.innerText = item
+//         list.appendChild(word)
+//     });
+// }
+
+
+// const plusArray = () => {
+//     let array = JSON.parse(localStorage.getItem('goodArray'))
+//     array.push(array.at(-1) + 1)
+//     localStorage.setItem('goodArray', JSON.stringify(array))
+
+// }
+
+
+
+
+
+// save.addEventListener('click', saveDate)
+// get.addEventListener('click', getDate)
+// plus.addEventListener('click', plusArray)
