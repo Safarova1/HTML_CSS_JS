@@ -1,0 +1,66 @@
+server- sonmuyen komptu
+
+
+place
+
+
+cors  - klient serverden sorgu ala bilir (icaze)
+
+//------------------------------------------------------------------------------
+fetch('link')
+.then((res)=> console.log( res ))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------
+4nov sorgu novu -htp metodlari
+https://www.w3schools.com/tags/ref_httpmethods.asp
+
+get - melumati al
+post - melumati yaradim servere gondermek
+put - serverde melumati deyishek(butov deyismek)
+delete - silmek ucun 
+
+patch - acari deyismek(icinde biraz deyismek)
+
+
+
+
+//------------------------------------------------------------------------------
+200 okey bildirisi
+404 xeta
+400-500 klient terefde xetadi
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------
+node index - serveri qaldirmaq-islek veziyyete catdirmaq
+
+
+
+
+//------------------------------------------------------------------------------
+.catch -xetanin qarshisini almaq
+xetani iflede bilmek olar  catch
+
+
+https://jsonplaceholder.typicode.com/   -- aciq json serves 
+
+
+

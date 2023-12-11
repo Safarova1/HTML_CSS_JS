@@ -1,0 +1,22 @@
+ul{
+    border:1px solid pink ;
+}
+
+
+#list{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+}
+
+#list li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#list li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
