@@ -1,0 +1,65 @@
+js --brauzerde -backend
+
+
+
+
+
+1xx  -> server ile bagli melumat
+2xx  -> her sey yolundadi 
+201 - sorgu gedir  umumi her sey yaxsidi 
+200 - ok
+204 - ok
+
+3xx -serverde adi ve yaxud unvani deyisib
+4xx -istifadeci terefde problem 400\404\429
+5xx - 500
+
+
+
+
+
+Thunder Client -yukle extension
+Content-Type : 
+text/html
+text/css
+text/json
+
+
+
+
+
+//--------------------------------------------------------------
+
+1XX -- Serverle bağlı melumat
+2XX -- Sorgu normaldi 201\200\204
+3XX -- Serverde resurs deyisik\cachleme
+4XX -- istifadeci terefde problem 400\404\429
+401- sizin siteme icazeniz yoxdu
+403-  sizin sitemin icindekine gitmeye icazeniz yoxdu
+5xx -- 500
+
+\\\
+
+Content-Type :
+ text/html  "<p>kshj</p>"
+  text/plain "hello"
+ application/json  {"a": 1}
+ application/x-www-form-urlencoded   / <form> 
+ multipart/form-data  / <form><input type="file"/></form>
+
+ application/octet-stream  // Stream
+Authorization: TOKEN XXX
+
+'accept-encoding': 'gzip, deflate, br',
+
+
+
+
+//--------------------------------------------------------------
+
+event.stopPropagation()
+
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_stoppropagation
+
+
+
